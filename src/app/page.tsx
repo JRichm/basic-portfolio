@@ -29,6 +29,16 @@ export default function Home() {
         {/* About Section */}
         <div className='bg-gray-100'>
           <h1 className='mx-10 pt-16 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>About</h1>
+          <div className='grid grid-cols-2 p-12'>
+            <div className='flex flex-col gap-8'>
+              <p className='w-[400px]'>&emsp;&emsp;👋 Hey there! I'm James, a passionate full-stack developer based in beautiful Utah. Solving coding puzzles is my forte, and I take pride in turning complex challenges into elegant solutions.</p>
+              <p className='w-[400px]'>&emsp;&emsp;🚀 In my coding journey, I've successfully developed and deployed a range of projects. One that I'm particularly proud of is [Project X], where I led a team to create [specific feature or achievement]. This experience taught me the importance of effective collaboration and the thrill of achieving ambitious goals together.</p>
+            </div>
+            <div className='flex flex-col gap-8'>
+              <p className='w-[400px]'>&emsp;&emsp;🤝 I thrive in collaborative environments and believe in the power of seamless user experiences. Whether it's enhancing productivity, improving accessibility, or fostering creativity, I find inspiration in projects that make a positive impact.</p>
+              <p className='w-[400px]'>&emsp;&emsp;🎸 When I'm not immersed in code, you'll likely find me strumming my guitar or catching some waves at the beach. Surprising as it may seem, my love for music and the ocean often intertwines with my coding adventures. I've even crafted a music recommendation app inspired by my eclectic taste!</p>
+            </div>
+          </div>
         </div>
 
         {/* Skills Section */}  
