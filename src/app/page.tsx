@@ -4,13 +4,19 @@ import Image from 'next/image'
 import SkillComponent from './components/skillComponent'
 import ProjectComponent from './components/projectComponent'
 import HeroComponent from './components/heroComponent'
+import ContactComponent from './components/contactComponent'
+import MainHeader from './components/mainHeader'
 
 export default function Home() {
   return (
     <main className='flex flex-col bg-gray-100'>
-      <div className='w-[1000px] max-w-screen self-center'>
+      <div className='w-[1000px] max-w-screen self-center pb-36'>
+        <div>
+          <MainHeader />
+        </div>
+
         {/* Hero Section */}
-        <div className='flex flex-col'>
+        <div className='flex flex-col mt-36'>
           <HeroComponent />
         </div>
 
@@ -37,6 +43,7 @@ export default function Home() {
         {/* Contact Section */}
         <div className='bg-gray-100'>
           <h1 className='mx-10 pt-16 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Contact</h1>
+          <ContactComponent />
         </div>
       </div>
     </main>
