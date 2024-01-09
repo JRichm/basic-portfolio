@@ -41,7 +41,6 @@ export default function ProjectComponent() {
                         projects[i].images.length > 0 ? 
                         <div>
                             <img alt="image" src={`${projects[i].images[0]}`} width={200} height={200}></img>
-                            <p>{projects[i].images[0]}</p>
                         </div>
                         :
                         <div>

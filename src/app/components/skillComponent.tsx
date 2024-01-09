@@ -91,7 +91,7 @@ export default function SkillComponent() {
       const category = skills[skill];
       const colorClass = getColorForCategory(category)
       skillElements.push(
-        <p key={skill} className={`${colorClass} px-3 rounded-full text-lg font-medium text-white w-fit transition-all duration-700`}>
+        <p key={skill} className={`${colorClass} px-3 rounded-full text-md font-medium text-white w-fit transition-all duration-700`}>
           {skill}
         </p>
       );
