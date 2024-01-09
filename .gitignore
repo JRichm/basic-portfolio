@@ -17,8 +17,8 @@
 *.pem
 
 # next
-.next
-out
+/.next
+/out
 
 # debug
 npm-debug.log*
