@@ -18,7 +18,7 @@ export default function ProjectPage() {
     const [project, setProject] = useState<ProjectType | undefined>();
     const [currentViewIndex, setViewIndex] = useState(0);
 
-    const { id } = useParams();
+    let { id } = useParams() as { id: string };
 
     useEffect(() => {
         const fetchData = async () => {
