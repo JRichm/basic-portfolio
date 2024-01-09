@@ -42,6 +42,7 @@ export default function ProjectComponent() {
                         projects[i].images.length > 0 ? 
                         <div>
                             <Image alt="image" src={`.${projects[i].images[0]}`} width={200} height={200} />
+                            <p>{projects[i].images[0]}</p>
                         </div>
                         :
                         <div>
@@ -52,7 +53,7 @@ export default function ProjectComponent() {
             </div>
         );
     };
-    
+
     const PreviousButton = () => {
 
         let canGoBack = () => {
