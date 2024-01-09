@@ -115,7 +115,7 @@ export default function SkillComponent() {
           </p>
           ))}
       </div>
-      <div className='flex flex-row flex-wrap gap-2 justify-center bg-gray-200 p-6 mx-32 my-2 rounded-lg'>
+      <div className='flex flex-row flex-wrap gap-2 justify-center bg-gray-200 p-6 mx-8 my-2 rounded-lg'>
         { skillElements }
       </div>
     </div>

@@ -21,23 +21,23 @@ export default function Home() {
         </div>
 
         {/* Projects Section */}
-        <div className='bg-gray-100 flex flex-col'>
-          <h1 className='mx-10 pt-16 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Projects</h1>
+        <div className='bg-gray-100 flex flex-col pt-24'>
+          <h1 className='mx-10 pt-6 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Projects</h1>
           <ProjectComponent />
           <a href="https://www.github.com/JRichm/" target='_blank' className='mx-12 mt-6 px-4 py-1 w-fit text-lg'>See all projects →</a>
         </div>
 
         {/* Skills Section */}  
-        <div className='bg-gray-100'>
-          <h1 className='mx-10 pt-16 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Skills</h1>
+        <div className='bg-gray-100 pt-24'>
+          <h1 className='mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Skills</h1>
           <div className='pb-12'>
             <SkillComponent /> 
           </div>
         </div>
 
         {/* About Section */}
-        <div className='bg-gray-100'>
-          <h1 className='mx-10 pt-16 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>About</h1>
+        <div className='bg-gray-100 pt-24'>
+          <h1 className='mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>About</h1>
           <div className='grid grid-cols-2 p-12'>
             <div className='flex flex-col gap-8'>
               <p className='w-[400px]'>&emsp;&emsp;👋 Hey there! I'm James, a passionate full-stack developer based in Sandy, Utah. Solving coding puzzles is my forte, and I take pride in turning complex challenges into elegant solutions.</p>
@@ -51,8 +51,8 @@ export default function Home() {
         </div>
 
         {/* Contact Section */}
-        <div className='bg-gray-100'>
-          <h1 className='mx-10 pt-16 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Contact</h1>
+        <div className='bg-gray-100 pt-24'>
+          <h1 className='mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>Contact</h1>
           <ContactComponent />
         </div>
       </div>

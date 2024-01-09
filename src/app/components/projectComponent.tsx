@@ -34,8 +34,8 @@ export default function ProjectComponent() {
 
     for (let i = currentViewIndex; i < currentViewIndex + 4 && i < projects.length; i++) {
         projectElements.push(
-            <div key={projects[i].id} className='bg-gradient-to-r from-cyan-800 via-fuchsia-500 to-amber-500 p-0 hover:p-1 w-[25%] h-[200px] rounded-md text-center flex flex-col justify-center font-bold hover:bg-gray-300/80 hover:cursor-pointer transition-all duration-200 hover:opacity-85' style={{ userSelect: 'none' }}>
-                <div className='hover:bg-white bg-gray-50 h-full w-full rounded-sm p-3 flex flex-col justify-center'>
+            <div key={projects[i].id} className='bg-gradient-to-r from-cyan-800 via-fuchsia-500 to-amber-500 p-0 hover:p-1 w-[208px] aspect-square rounded-md text-center flex flex-col justify-center font-bold hover:bg-gray-300/80 hover:cursor-pointer transition-all duration-200 hover:opacity-85' style={{ userSelect: 'none' }}>
+                <div className='hover:bg-white bg-gray-50 h-full rounded-sm p-3 flex flex-col justify-center'>
                     <h1 className='text-sm'>{projects[i]?.name || 'N/A'}</h1>
                     {
                         projects[i].images.length > 0 ? 
@@ -44,7 +44,7 @@ export default function ProjectComponent() {
                         </div>
                         :
                         <div>
-                            <p className='text-gray-400 text-[10px]'>no images found</p>
+                            <p className='text-gray-400 text-[10px] w-full'>no images found</p>
                         </div>
                     }
                 </div>
@@ -59,8 +59,8 @@ export default function ProjectComponent() {
         }
 
         return (
-            <div className='bg-gray-200 w-8 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoBack() ? setViewIndex(currentViewIndex - 1) : console.log('cannot go back') }>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/TriangleArrow-Left.svg/1200px-TriangleArrow-Left.svg.png" className='opacity-25' style={{ userSelect: 'none' }}></img>
+            <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoBack() ? setViewIndex(currentViewIndex - 1) : console.log('cannot go back') }>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/TriangleArrow-Left.svg/1200px-TriangleArrow-Left.svg.png" className='opacity-25 w-4' style={{ userSelect: 'none' }}></img>
             </div>
         )
     }
@@ -73,14 +73,14 @@ export default function ProjectComponent() {
         }
 
         return (
-            <div className='bg-gray-200 w-8 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoForward() ? setViewIndex(currentViewIndex + 1) : console.log('cannot go forward') }>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TriangleArrow-Right.svg/461px-TriangleArrow-Right.svg.png?20060109153651" className='opacity-25' style={{ userSelect: 'none' }}></img>
+            <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoForward() ? setViewIndex(currentViewIndex + 1) : console.log('cannot go forward') }>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TriangleArrow-Right.svg/461px-TriangleArrow-Right.svg.png?20060109153651" className='opacity-25 w-4' style={{ userSelect: 'none' }}></img>
             </div>
         )
     }
 
     return (
-        <div className='flex flex-row gap-5 place-items-center justify-center px-12'>
+        <div className='flex flex-row gap-5 place-items-center justify-center bg-gray-200 rounded-md py-4'>
             <PreviousButton />
             { projectElements }
             <NextButton />
