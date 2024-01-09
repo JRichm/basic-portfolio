@@ -61,7 +61,7 @@ export default function SkillComponent() {
     if (!shuffledSkills) {
       setSkills(shuffleArray(Object.keys(skills)));
     }
-  }, [shuffledSkills, skills]);
+  }, [shuffledSkills]);
 
   const getColorForCategory = (category: string) => {
     if (selectedCategories.includes(category)) {
