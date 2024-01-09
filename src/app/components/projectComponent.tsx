@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 const projects = [0,1,2,3,4,5,6];
 
@@ -41,7 +40,7 @@ export default function ProjectComponent() {
                     {
                         projects[i].images.length > 0 ? 
                         <div>
-                            <Image alt="image" src={`${projects[i].images[0]}`} width={200} height={200} />
+                            <img alt="image" src={`${projects[i].images[0]}`} width={200} height={200}></img>
                             <p>{projects[i].images[0]}</p>
                         </div>
                         :
@@ -63,7 +62,7 @@ export default function ProjectComponent() {
 
         return (
             <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoBack() ? setViewIndex(currentViewIndex - 1) : console.log('cannot go back') }>
-                <Image alt="image" src="/images/icons/backIcon.webp" className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></Image>
+                <img alt="image" src={'/backIcon.webp'} className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></img>
             </div>
         );
     };
@@ -77,7 +76,7 @@ export default function ProjectComponent() {
 
         return (
             <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoForward() ? setViewIndex(currentViewIndex + 1) : console.log('cannot go forward') }>
-                <Image alt="image" src="/images/icons/forwardIcon.webp" className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></Image>
+                <img alt="image" src={'/forwardIcon.webp'} className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></img>
             </div>
         );
     };

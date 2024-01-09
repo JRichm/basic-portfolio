@@ -19,7 +19,13 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "forwardIcon.webp": ["/public/forwardIcon.webp"],
+      "backIcon.webp": ["/public/backIcon.webp"],
+      "artistlinq.png": ["/public/artistlinq.png"],
+      "gardengame.png": ["/public/gardengame.png"],
+      "midifret.png": ["/public/midifret.png"],
+      "moon.png": ["/public/moon.png"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
