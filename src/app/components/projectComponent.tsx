@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-const projects = [0,1,2,3,4,5,6]
+const projects = [0,1,2,3,4,5,6];
 
 interface ProjectType {
     id: number;
@@ -51,34 +51,35 @@ export default function ProjectComponent() {
                 </div>
             </div>
         );
-    }
+    };
+    
     const PreviousButton = () => {
 
         let canGoBack = () => {
             if (currentViewIndex - 1 < 0) return false;
             else return true;
-        }
+        };
 
         return (
             <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoBack() ? setViewIndex(currentViewIndex - 1) : console.log('cannot go back') }>
                 <Image alt="image" src="/images/icons/backIcon.webp" className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></Image>
             </div>
-        )
-    }
+        );
+    };
 
     const NextButton = () => {
 
         let canGoForward = () => {
             if (currentViewIndex + 5 > projects.length) return false;
             else return true;
-        }
+        };
 
         return (
             <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoForward() ? setViewIndex(currentViewIndex + 1) : console.log('cannot go forward') }>
                 <Image alt="image" src="/images/icons/forwardIcon.webp" className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></Image>
             </div>
-        )
-    }
+        );
+    };
 
     return (
         <div className='flex flex-row gap-5 place-items-center justify-center bg-gray-200 rounded-md py-4'>
@@ -86,5 +87,5 @@ export default function ProjectComponent() {
             { projectElements }
             <NextButton />
         </div>
-    )
+    );
 }
