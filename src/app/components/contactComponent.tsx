@@ -9,14 +9,15 @@ export default function ContactComponent() {
                     <p className="font-nunito_sans tracking-wider font-semibold text-gray-500">(385) 290-5183</p>
                 </div>
                 <form className="flex flex-col w-[456px]">
-                    <label className="text-sm font-nunito_sans font-medium text-gray-500" htmlFor="firstName">First Name</label>
-                    <input className="rounded h-8 mb-3" name="firstName"></input>
+                    <label className="text-sm font-nunito_sans font-medium text-gray-500 transition-all" htmlFor="firstName">First Name</label>
+                    <input className="rounded h-8 mb-3 p-1" name="firstName" required></input>
                     <label className="text-sm font-nunito_sans font-medium text-gray-500" htmlFor="firstName">Last Name</label>
-                    <input className="rounded h-8 mb-3" name="lastName"></input>
+                    <input className="rounded h-8 mb-3 p-1" name="lastName"></input>
                     <label className="text-sm font-nunito_sans font-medium text-gray-500" htmlFor="firstName">Email</label>
-                    <input className="rounded h-8 mb-3" name="email"></input>
+                    <input className="rounded h-8 mb-3 p-1" name="email" required></input>
                     <label className="text-sm font-nunito_sans font-medium text-gray-500" htmlFor="firstName">Message</label>
-                    <textarea className="rounded h-24 mb-3" name="message"></textarea>
+                    <textarea className="rounded h-24 mb-3 p-1" name="message" required></textarea>
+                    <input type="submit" className="font-nunito_sans font-medium bg-sky-700 text-white self-end w-[120px] rounded mt-4" value="Send"></input>
                 </form>
             </div>
         </div>
