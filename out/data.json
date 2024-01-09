@@ -1,0 +1,52 @@
+{
+    "projects": {
+        "0": {
+            "name": "GardenGame",
+            "description": "A fun and interactive game made for you to sit back and cultivate a peaceful garden.",
+            "date": "Jul 27, 2023",
+            "images": [
+                "images/gardengame.png"
+            ]
+        },
+        "1": {
+            "name": "MidiFret",
+            "description": "An online file converter that lets users convert .midi files into readable guitar tablature",
+            "date": "April 5, 2023",
+            "images": [
+                "images/midifret.png"
+            ]
+        },
+        "2": {
+            "name": "ArtistLinq",
+            "description": "",
+            "date": "",
+            "images": [
+                "images/artistlinq.png"
+            ]
+        },
+        "3": {
+            "name": "PixelPath",
+            "description": "Try to find strategy while you defend your tower against a randomly generated world.",
+            "date": "",
+            "images": [
+
+            ]
+        },
+        "4": {
+            "name": "SurvivalRTS",
+            "description": "",
+            "date": "",
+            "images": [
+
+            ]
+        },
+        "5": {
+            "name": "Fresh Table Greens",
+            "description": "",
+            "date": "",
+            "images": [
+
+            ]
+        }
+    }
+}
