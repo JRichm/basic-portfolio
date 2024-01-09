@@ -4,6 +4,9 @@
             "name": "GardenGame",
             "description": "A fun and interactive game made for you to sit back and cultivate a peaceful garden.",
             "date": "Jul 27, 2023",
+            "videos": [
+                "https://www.youtube.com/watch?v=k33QYJn3hmQ"
+            ],
             "images": [
                 "/gardengame.png"
             ]
@@ -12,6 +15,9 @@
             "name": "MidiFret",
             "description": "An online file converter that lets users convert .midi files into readable guitar tablature",
             "date": "April 5, 2023",
+            "videos": [
+                "https://www.youtube.com/watch?v=FArKw2FsZsw&t=66s"
+            ],
             "images": [
                 "/midifret.png"
             ]
