@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const projects = [0,1,2,3,4,5,6]
 
@@ -40,7 +41,7 @@ export default function ProjectComponent() {
                     {
                         projects[i].images.length > 0 ? 
                         <div>
-                            <img src={`${projects[i].images[0]}`}></img>
+                            <Image alt="image" src={`/${projects[i].images[0]}`} width={200} height={200}></Image>
                         </div>
                         :
                         <div>
@@ -60,7 +61,7 @@ export default function ProjectComponent() {
 
         return (
             <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoBack() ? setViewIndex(currentViewIndex - 1) : console.log('cannot go back') }>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/TriangleArrow-Left.svg/1200px-TriangleArrow-Left.svg.png" className='opacity-25 w-4' style={{ userSelect: 'none' }}></img>
+                <Image alt="image" src="/images/icons/backIcon.webp" className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></Image>
             </div>
         )
     }
@@ -74,7 +75,7 @@ export default function ProjectComponent() {
 
         return (
             <div className='bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoForward() ? setViewIndex(currentViewIndex + 1) : console.log('cannot go forward') }>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TriangleArrow-Right.svg/461px-TriangleArrow-Right.svg.png?20060109153651" className='opacity-25 w-4' style={{ userSelect: 'none' }}></img>
+                <Image alt="image" src="/images/icons/forwardIcon.webp" className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></Image>
             </div>
         )
     }

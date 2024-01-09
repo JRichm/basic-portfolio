@@ -28,9 +28,11 @@ export default function SkillComponent() {
     'Selenium': 'Tools',
     'Rollbar': 'Tools',
     'bit.io': 'Tools',
+    'ServiceNow': 'Tools',
     'Cloud Hosting': 'Tools',
     'Flask': 'Frameworks',
     'Node.js': 'Frameworks',
+    'OpenCV': 'Frameworks',
     'tkinter': 'Frameworks',
     'webpack': 'Frameworks',
     'jQuery': 'Frameworks',
@@ -39,6 +41,7 @@ export default function SkillComponent() {
     'Pycharm': 'Apps',
     'Eclipse': 'Apps',
     'Blender': 'Apps',
+    'Adobe': 'Apps',
   }
 
   const [selectedCategories, setCategories] = useState(allCategories)
@@ -58,7 +61,7 @@ export default function SkillComponent() {
     if (!shuffledSkills) {
       setSkills(shuffleArray(Object.keys(skills)));
     }
-  }, [shuffledSkills]);
+  }, [shuffledSkills, skills]);
 
   const getColorForCategory = (category: string) => {
     if (selectedCategories.includes(category)) {
