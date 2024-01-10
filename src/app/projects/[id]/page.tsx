@@ -1,44 +1,29 @@
-"use client"
-
-import React, { useState, useEffect } from 'react';
-
-import { useParams } from 'next/navigation'
 import SubHeader from '@/app/components/subHeader';
 
 interface ProjectType {
-    "name": string;
-    "description": string;
-    "date": string;
-    "videos": string[];
-    "images": string[];
+    name: string;
+    description: string;
+    date: string;
+    videos: string[];
+    images: string[];
 }
 
-export default function ProjectPage() {
+interface ProjectPageProps {
+    project: ProjectType;
+}
 
-    const [project, setProject] = useState<ProjectType | undefined>();
-    const [currentViewIndex, setViewIndex] = useState(0);
+const data = require('../../../../public/data.json').projects;
 
-    let { id } = useParams() as { id: string };
+export async function generateStaticParams() {
+    console.log('generating staticParams')
+    return data.map((project: ProjectType, index: number) => ({
+        params: {
+            id: index.toString(), // Use index as a simple identifier
+        },
+    }));
+}
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('/data.json');
-                const data = await response.json();
-
-                // Check if the project with the given id exists in the data
-                if (id && data.projects[id]) {
-                    setProject(data.projects[id]);
-                } else {
-                    console.error(`Project with id ${id} not found`);
-                }
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
-
-        fetchData();
-    }, [id]);
+export default function ProjectPage({ project }: ProjectPageProps) {
 
     return (
         <main className="flex flex-col bg-gray-100">

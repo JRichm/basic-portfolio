@@ -1,58 +1,42 @@
 {
-    "projects": {
-        "0": {
+    "projects": [
+        {
             "name": "GardenGame",
             "description": "A fun and interactive game made for you to sit back and cultivate a peaceful garden.",
-            "date": "Jul 27, 2023",
-            "videos": [
-                "https://www.youtube.com/watch?v=k33QYJn3hmQ"
-            ],
-            "images": [
-                "/gardengame.png"
-            ]
+            "date": "2023-07-27",
+            "videos": ["https://www.youtube.com/watch?v=k33QYJn3hmQ"],
+            "images": ["/gardengame.png"]
         },
-        "1": {
+        {
             "name": "MidiFret",
             "description": "An online file converter that lets users convert .midi files into readable guitar tablature",
-            "date": "April 5, 2023",
-            "videos": [
-                "https://www.youtube.com/watch?v=FArKw2FsZsw&t=66s"
-            ],
-            "images": [
-                "/midifret.png"
-            ]
+            "date": "2023-04-05",
+            "videos": ["https://www.youtube.com/watch?v=FArKw2FsZsw&t=66s"],
+            "images": ["/midifret.png"]
         },
-        "2": {
+        {
             "name": "ArtistLinq",
-            "description": "",
-            "date": "",
-            "images": [
-                "/artistlinq.png"
-            ]
+            "description": "Description goes here.",
+            "date": "2023-xx-xx",
+            "images": ["/artistlinq.png"]
         },
-        "3": {
+        {
             "name": "PixelPath",
             "description": "Try to find strategy while you defend your tower against a randomly generated world.",
-            "date": "",
-            "images": [
-
-            ]
+            "date": "2023-xx-xx",
+            "images": []
         },
-        "4": {
+        {
             "name": "SurvivalRTS",
-            "description": "",
-            "date": "",
-            "images": [
-
-            ]
+            "description": "Description goes here.",
+            "date": "2023-xx-xx",
+            "images": []
         },
-        "5": {
+        {
             "name": "Fresh Table Greens",
-            "description": "",
-            "date": "",
-            "images": [
-
-            ]
+            "description": "Description goes here.",
+            "date": "2023-xx-xx",
+            "images": []
         }
-    }
+    ]
 }
