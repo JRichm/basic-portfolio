@@ -7,7 +7,8 @@
             "date": "2023-07-27",
             "videos": ["https://www.youtube.com/watch?v=k33QYJn3hmQ"],
             "images": ["/gardengame.png"],
-            "technologies": ["Javascript", "Flask", "AWS", "SQL"]
+            "technologies": ["Javascript-Languages", "Flask-Frameworks", "Amazon AWS-Tools", "SQL-Data"],
+            "aboutParagraphs": []
         },
         {
             "id": "1",
@@ -16,7 +17,8 @@
             "date": "2023-04-05",
             "videos": ["https://www.youtube.com/watch?v=FArKw2FsZsw"],
             "images": ["/midifret.png"],
-            "technologies": ["Javascript", "Node.js", "AWS", "bit.io"]
+            "technologies": ["Javascript-Languages", "Node.js-Frameworks", "Amazon AWS-Tools", "bit.io-Data"],
+            "aboutParagraphs": ["Online guitar tablature helped me learn guitar and I wanted to make tabs more available to give new player more tools to learn. I did this by creating a tool for anyone to either compose their own tabs or upload .midi files and convert them into tabs."]
         },
         {
             "id": "2",
@@ -24,7 +26,8 @@
             "description": "Description goes here.",
             "date": "2023-xx-xx",
             "images": ["/artistlinq.png"],
-            "technologies": ["Typescript", "Next.js", "prisma", "Microsoft Azure"]
+            "technologies": ["Typescript-Languages", "Next.js-Frameworks", "prisma-Data", "Microsoft Azure-Tools"],
+            "aboutParagraphs": []
         },
         {
             "id": "3",
@@ -32,7 +35,8 @@
             "description": "Try to find strategy while you defend your tower against a randomly generated world.",
             "date": "2023-xx-xx",
             "images": ["/pixelpath.png"],
-            "technologies": ["C#", "Unity", "Blender"]
+            "technologies": ["C#-Languages", "Unity-Apps", "Blender-Apps"],
+            "aboutParagraphs": []
         },
         {
             "id": "4",
@@ -40,7 +44,8 @@
             "description": "Description goes here.",
             "date": "2023-xx-xx",
             "images": [],
-            "technologies": ["C#", "Unity", "Blender"]
+            "technologies": ["C#-Languages", "Unity-Apps", "Blender-Apps"],
+            "aboutParagraphs": []
         },
         {
             "id": "5",
@@ -48,7 +53,8 @@
             "description": "Description goes here.",
             "date": "2023-xx-xx",
             "images": [],
-            "technologies": ["Typescript", "Next.js", "AWS"]
+            "technologies": ["Typescript-Languages", "Next.js-Frameworks", "Amazon AWS-Tools"],
+            "aboutParagraphs": ["What initially began as an exciting prospect for a new client in the agricultural sector ultimately led me to a financial scam during payment negotiations. After recognizing the scam, I severed ties but remained committed to delivering a top-notch website.", "I transformed initial mockups into a sleek, user-friendly platform tailored to the client's needs. This experience not only showcased my proficiency in web development but also demonstrated resilience in overcoming unexpected challenges, solidifying my dedication to delivering excpetional results.", "The completed website now stands as a testament to my unwavering commitment to professionalism and quality."]
         }
     ]
 }

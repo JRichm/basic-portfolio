@@ -8,6 +8,7 @@ interface ProjectType {
     detail: string;
     images: string[];
     technologies: string[];
+    aboutParagraphs: string[];
 }
 
 export default function ProjectComponent() {
@@ -51,7 +52,7 @@ export default function ProjectComponent() {
                         <div className='flex flex-wrap gap-1.5 p-1 justify-center gap-y-0 w-[180px] self-center tracking-normal'>
                             {
                                 projects[i].technologies.map(tech => (
-                                    <p key={`${tech}`} className='text-sm font-light'><em className='text-[10px] pr-0.5'>#</em>{`${tech}`}</p>
+                                    <p key={`${ tech.split('-')[0] }`} className='text-sm font-light'><em className='text-[10px] pr-0.5'>#</em>{`${ tech.split('-')[0] }`}</p>
                                 ))
                             }
                         </div>
