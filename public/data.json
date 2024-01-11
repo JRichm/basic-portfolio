@@ -6,7 +6,8 @@
             "description": "A fun and interactive game made for you to sit back and cultivate a peaceful garden.",
             "date": "2023-07-27",
             "videos": ["https://www.youtube.com/watch?v=k33QYJn3hmQ"],
-            "images": ["/gardengame.png"]
+            "images": ["/gardengame.png"],
+            "technologies": ["Javascript", "Flask", "AWS", "SQL"]
         },
         {
             "id": "1",
@@ -14,35 +15,40 @@
             "description": "An online file converter that lets users convert .midi files into readable guitar tablature",
             "date": "2023-04-05",
             "videos": ["https://www.youtube.com/watch?v=FArKw2FsZsw"],
-            "images": ["/midifret.png"]
+            "images": ["/midifret.png"],
+            "technologies": ["Javascript", "Node.js", "AWS", "bit.io"]
         },
         {
             "id": "2",
             "name": "ArtistLinq",
             "description": "Description goes here.",
             "date": "2023-xx-xx",
-            "images": ["/artistlinq.png"]
+            "images": ["/artistlinq.png"],
+            "technologies": ["Typescript", "Next.js", "prisma", "Microsoft Azure"]
         },
         {
             "id": "3",
             "name": "PixelPath",
             "description": "Try to find strategy while you defend your tower against a randomly generated world.",
             "date": "2023-xx-xx",
-            "images": []
+            "images": ["/pixelpath.png"],
+            "technologies": ["C#", "Unity", "Blender"]
         },
         {
             "id": "4",
             "name": "SurvivalRTS",
             "description": "Description goes here.",
             "date": "2023-xx-xx",
-            "images": []
+            "images": [],
+            "technologies": []
         },
         {
             "id": "5",
             "name": "Fresh Table Greens",
             "description": "Description goes here.",
             "date": "2023-xx-xx",
-            "images": []
+            "images": [],
+            "technologies": []
         }
     ]
 }

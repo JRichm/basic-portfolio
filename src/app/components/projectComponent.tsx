@@ -7,6 +7,7 @@ interface ProjectType {
     name: string;
     detail: string;
     images: string[];
+    technologies: string[];
 }
 
 export default function ProjectComponent() {
@@ -33,16 +34,30 @@ export default function ProjectComponent() {
     for (let i = currentViewIndex; i < currentViewIndex + 4 && i < projects.length; i++) {
         projectElements.push(
             <a href={`/projects/${i}`} key={projects[i].id} className='bg-gradient-to-r from-cyan-800 via-fuchsia-500 to-amber-500 p-0 hover:p-1 w-[208px] aspect-square rounded-lg text-center flex flex-col justify-center font-bold hover:bg-gray-300/80 hover:cursor-pointer transition-all hover:duration-[0.2s] duration-300 hover:opacity-85' style={{ userSelect: 'none' }}>
-                <div className='hover:bg-white bg-gray-50 h-full rounded-md p-3 flex flex-col justify-center'>
+                <div className='hover:bg-white bg-gray-50 h-full rounded-md p-3 flex flex-col'>
                     <h1 className='text-sm'>{projects[i]?.name || 'N/A'}</h1>
                     {
                         projects[i].images.length > 0 ? 
                         <div>
-                            <img alt="image" src={`${projects[i].images[0]}`} width={200} height={200}></img>
+                            <img alt="image" className='max-h-[100px]' src={`${projects[i].images[0]}`} width={200} height={200}></img>
                         </div>
                         :
                         <div>
                             <p className='text-gray-400 text-[10px] w-full'>no images found</p>
+                        </div>
+                    }
+                    {
+                        projects[i].technologies.length > 0 ?
+                        <div className='flex flex-wrap gap-1 p-1 justify-center'>
+                            {
+                                projects[i].technologies.map(tech => (
+                                    <p className='text-sm font-light'>{`${tech}`}</p>
+                                ))
+                            }
+                        </div>
+                        :
+                        <div className='h-full py-2'>
+                            <p className='text-sm font-light'>No technologies found..</p>
                         </div>
                     }
                 </div>
