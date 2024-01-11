@@ -33,7 +33,7 @@ export default function ProjectComponent() {
 
     for (let i = currentViewIndex; i < currentViewIndex + 4 && i < projects.length; i++) {
         projectElements.push(
-            <a href={`/projects/${i}`} key={projects[i].id} className='bg-gradient-to-r from-cyan-800 via-fuchsia-500 to-amber-500 p-0 hover:p-1 w-[208px] aspect-square rounded-lg text-center flex flex-col justify-center font-bold hover:bg-gray-300/80 hover:cursor-pointer transition-all hover:duration-[0.2s] duration-300 hover:opacity-85' style={{ userSelect: 'none' }}>
+            <a href={`/projects/${i}`} key={projects[i].id} className='hover:tracking-normal tracking-wide bg-gradient-to-r from-cyan-800 via-fuchsia-500 to-amber-500 p-0 hover:p-1 w-[208px] aspect-square rounded-lg text-center flex flex-col justify-center font-bold hover:bg-gray-300/80 hover:cursor-pointer transition-all hover:duration-[0.2s] duration-300 hover:opacity-85' style={{ userSelect: 'none' }}>
                 <div className='hover:bg-white bg-gray-50 h-full rounded-md p-3 flex flex-col'>
                     <h1 className='text-sm'>{projects[i]?.name || 'N/A'}</h1>
                     {
@@ -48,10 +48,10 @@ export default function ProjectComponent() {
                     }
                     {
                         projects[i].technologies.length > 0 ?
-                        <div className='flex flex-wrap gap-1 p-1 justify-center'>
+                        <div className='flex flex-wrap gap-1.5 p-1 justify-center gap-y-0 w-[180px] self-center tracking-normal'>
                             {
                                 projects[i].technologies.map(tech => (
-                                    <p className='text-sm font-light'>{`${tech}`}</p>
+                                    <p className='text-sm font-light'><em className='text-[10px] pr-0.5'>#</em>{`${tech}`}</p>
                                 ))
                             }
                         </div>
