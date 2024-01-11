@@ -13,7 +13,7 @@
             "name": "MidiFret",
             "description": "An online file converter that lets users convert .midi files into readable guitar tablature",
             "date": "2023-04-05",
-            "videos": ["https://www.youtube.com/watch?v=FArKw2FsZsw&t=66s"],
+            "videos": ["https://www.youtube.com/watch?v=FArKw2FsZsw"],
             "images": ["/midifret.png"]
         },
         {
