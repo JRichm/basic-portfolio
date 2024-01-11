@@ -91,7 +91,7 @@ export default function SkillComponent() {
       const category = skills[skill];
       const colorClass = getColorForCategory(category)
       skillElements.push(
-        <p key={skill} className={`${colorClass} px-3 rounded-full text-md font-medium text-white w-fit transition-all duration-700`}>
+        <p key={skill} className={`${colorClass} px-3 rounded-full lg:text-md font-medium text-sm text-white w-fit transition-all duration-700`}>
           {skill}
         </p>
       );
@@ -110,7 +110,7 @@ export default function SkillComponent() {
     
   return (
     <div className='flex flex-col place-items-center'>
-      <div className='flex flex-row gap-2 mx-10 my-3 self-start'>
+      <div className='lg:flex flex-row gap-2 mx-10 my-3 self-start hidden'>
         <p>filter:</p>
           {(allCategories).map((category) => (
           <p key={category} onClick={() => toggleCategory(category)} className={`${getColorForCategory(category)} px-3 rounded-md hover:cursor-pointer border-2 border-gray-300/15 text-white transition-all hover:shadow-[inset_0_0px_5px_rgba(0,0,0,0.6)] hover:shadow-neutral-700/25 hover:border-neutral-700/25 outline outline-1 hover:outline-gray-gray-800 hover:text-black/35`} >
