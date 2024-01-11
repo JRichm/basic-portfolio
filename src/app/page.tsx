@@ -37,7 +37,7 @@ export default function Home() {
         <div className="bg-gray-100 flex flex-col pt-24 gap-6">
           <h1 className="mx-10 pb-6 tracking-tighter text-3xl font-bold font-nunito_sans">Projects</h1>
           <ProjectComponent />
-          <a href="https://www.github.com/JRichm/" target="_blank" className="mx-12 px-6 py-2 w-fit text-lg hover:bg-white/50 rounded-md transition-all duration-300">See all projects →</a>
+          <a href="https://github.com/JRichm?tab=repositories" target="_blank" className="mx-12 px-6 py-2 w-fit text-lg hover:bg-white/50 rounded-md transition-all duration-300">See all projects →</a>
         </div>
 
         {/* Skills Section */}  
