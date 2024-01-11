@@ -39,7 +39,7 @@ export default function Project({ params }: ProjectProps) {
                                     }
                                 </div>
                                 <div className='flex justify-center p-12'>
-                                    <img src={project.images[0]}></img>
+                                    <img alt='project-image' src={project.images[0]}></img>
                                 </div>
                             </div>
                             <hr />
