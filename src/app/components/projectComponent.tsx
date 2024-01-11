@@ -51,7 +51,7 @@ export default function ProjectComponent() {
                         <div className='flex flex-wrap gap-1.5 p-1 justify-center gap-y-0 w-[180px] self-center tracking-normal'>
                             {
                                 projects[i].technologies.map(tech => (
-                                    <p className='text-sm font-light'><em className='text-[10px] pr-0.5'>#</em>{`${tech}`}</p>
+                                    <p key={`${tech}`} className='text-sm font-light'><em className='text-[10px] pr-0.5'>#</em>{`${tech}`}</p>
                                 ))
                             }
                         </div>
