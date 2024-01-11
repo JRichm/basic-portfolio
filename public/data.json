@@ -40,7 +40,7 @@
             "description": "Description goes here.",
             "date": "2023-xx-xx",
             "images": [],
-            "technologies": []
+            "technologies": ["C#", "Unity", "Blender"]
         },
         {
             "id": "5",
@@ -48,7 +48,7 @@
             "description": "Description goes here.",
             "date": "2023-xx-xx",
             "images": [],
-            "technologies": []
+            "technologies": ["Typescript", "Next.js", "AWS"]
         }
     ]
 }
