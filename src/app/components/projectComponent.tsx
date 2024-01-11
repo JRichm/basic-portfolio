@@ -39,7 +39,7 @@ export default function ProjectComponent() {
                     {
                         projects[i].images.length > 0 ? 
                         <div>
-                            <img alt="image" className='max-h-[100px]' src={`${projects[i].images[0]}`} width={200} height={200}></img>
+                            <img alt="project image" className='max-h-[100px]' src={`${projects[i].images[0]}`} width={200} height={200}></img>
                         </div>
                         :
                         <div>
@@ -74,7 +74,7 @@ export default function ProjectComponent() {
 
         return (
             <div className={`hover:bg-gray-300 bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer`} onClick={ () => canGoBack() ? setViewIndex(currentViewIndex - 1) : console.log('cannot go back') }>
-                <img alt="image" src={'/backIcon.webp'} className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></img>
+                <img alt="previous" src={'/backIcon.webp'} className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></img>
             </div>
         );
     };
@@ -88,7 +88,7 @@ export default function ProjectComponent() {
 
         return (
             <div className='hover:bg-gray-300 bg-gray-100 h-20 m-[-10px] rounded-md flex place-items-center p-2 hover:cursor-pointer' onClick={ () => canGoForward() ? setViewIndex(currentViewIndex + 1) : console.log('cannot go forward') }>
-                <img alt="image" src={'/forwardIcon.webp'} className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></img>
+                <img alt="next" src={'/forwardIcon.webp'} className='opacity-25' width={16} height={16} style={{ userSelect: 'none' }}></img>
             </div>
         );
     };
