@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 
-const projects = [0,1,2,3,4,5,6];
-
 interface ProjectType {
     id: number;
     name: string;
