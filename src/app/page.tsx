@@ -20,6 +20,19 @@ export default function Home() {
           <HeroComponent />
         </div>
 
+        {/* About Section */}
+        <div className="bg-gray-100 pt-24 flex flex-col">
+          <h1 className="mx-10 pb-6 tracking-tighter text-3xl font-bold font-nunito_sans">Curious about the future of tech and innovation?</h1>
+          <p className="indent-4 mb-2">I'm James, a dynamic software engineer ready to take you on a journey of coding, collaboration, and creativity. Despite being relatively new to the professional scene, the advantages of working with me are crystal clear.</p>
+          <p className="indent-4">After college, I took a leap of faith, graduating from a rigorous software engineering bootcamp last year. Over the past three years, my passion for coding has evolved into a commitment to clean, efficient, and well-documented code.</p>
+          <h1 className="mx-10 p-6 mt-12 tracking-normal text-2xl font-medium font-nunito_sans">Why explore with me?</h1>
+          <div className="flex flex-row gap-4">
+            <p className="flex flex-col w-full place-items-center text-center"><em className="mb-1 px-12 not-italic indent-0 font-medium">🚀 Innovative Solutions</em>Challenges excite me, and I bring fresh perspectives to ensure innovative and effective solutions.</p>
+            <p className="flex flex-col w-full place-items-center text-center"><em className="mb-1 px-12 not-italic indent-0 font-medium">🤝 Collaborative Spirit</em>My enthusiasm for collaboration fosters an environment where ideas flourish, leading to creative and impactful outcomes.</p>
+            <p className="flex flex-col w-full place-items-center text-center"><em className="mb-1 px-12 not-italic indent-0 font-medium">💻 Tech Toolkit</em>Proficient in deploying full-stack applications, I bring a versatile skill set and a hunger for staying at the forefront of technological advancements.</p>
+          </div>
+        </div>
+
         {/* Projects Section */}
         <div className="bg-gray-100 flex flex-col pt-24 gap-6">
           <h1 className="mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans">Projects</h1>
@@ -32,14 +45,6 @@ export default function Home() {
           <h1 className="mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans">Skills</h1>
           <div className="pb-12">
             <SkillComponent /> 
-          </div>
-        </div>
-
-        {/* About Section */}
-        <div className="bg-gray-100 pt-24">
-          <h1 className="mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans">About</h1>
-          <div className="grid grid-cols-2">
-            <p>👋 Hey there! I&aposm James, a passionate full-stack developer based in Sandy, Utah. Solving coding puzzles is my forte, and I take pride in turning complex challenges into elegant solutions.</p>
           </div>
         </div>
 
