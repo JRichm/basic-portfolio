@@ -113,7 +113,7 @@ export default function SkillComponent() {
       <div className='flex flex-row gap-2 mx-10 my-3 self-start'>
         <p>filter:</p>
           {(allCategories).map((category) => (
-          <p key={category} onClick={() => toggleCategory(category)} className={`${getColorForCategory(category)} px-3 rounded-md hover:cursor-pointer border-2 border-gray-300/15 text-white transition-all hover:shadow-[inset_0_0px_5px_rgba(0,0,0,0.6)] hover:shadow-neutral-700/50 hover:border-neutral-700/25 outline outline-1 hover:outline-gray-gray-800`} >
+          <p key={category} onClick={() => toggleCategory(category)} className={`${getColorForCategory(category)} px-3 rounded-md hover:cursor-pointer border-2 border-gray-300/15 text-white transition-all hover:shadow-[inset_0_0px_5px_rgba(0,0,0,0.6)] hover:shadow-neutral-700/25 hover:border-neutral-700/25 outline outline-1 hover:outline-gray-gray-800 hover:text-black/35`} >
               {`${category}`}
           </p>
           ))}
