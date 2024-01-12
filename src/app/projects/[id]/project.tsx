@@ -39,22 +39,21 @@ export default function Project({ params }: ProjectProps) {
     };
 
     return (
-        <main className="flex flex-col bg-gray-100">
-            <div className="w-[1000px] max-w-screen self-center pb-36 flex flex-col">
+        <main className="flex flex-col bg-gray-100 min-h-screen">
+            <div className="lg:w-[1000px] max-w-screen self-center pb-36 flex flex-col">
                 <div>
                     <SubHeader />
                 </div>
-                <hr />
+                <hr className='mx-4'/>
                 <div>
                     {project ? (
-                        <div className='flex flex-col place-items-center'>
-                            <div className='bg-gray-100 flex flex-row py-24 gap-6 w-full'>
-                                <div className='flex flex-col p-12 gap-2 w-full'>
+                        <div className='flex flex-col place-items-center mx-6'>
+                            <div className='flex lg:flex-row flex-col-reverse lg:py-12 my-6 w-full'>
+                                <div className='flex flex-col lg:p-12 lg:px-12 px-6 lg:pb-12 pb-6 gap-3 w-full'>
                                     <h1 className='tracking-tighter text-4xl font-bold font-nunito_sans'>{project.name}</h1>
-                                    <p>{project.description}</p>
                                     {
                                         project.technologies.length > 0 ?
-                                        <div className='flex flex-row flex-wrap gap-2'>
+                                        <div className='flex flex-row flex-wrap gap-1'>
                                             {project.technologies.map((tech: string, index: number) => (
                                                 <p key={index} className={`${getColorForCategory(tech.split('-')[1])} w-fit h-fit text-center px-3 rounded-full text-sm`}>
                                                     {tech.split('-')[0]}
@@ -66,21 +65,22 @@ export default function Project({ params }: ProjectProps) {
                                             <p>no tech listed...</p>
                                         </div>
                                     }
+                                    <p>{project.description}</p>
                                     {project.videos && project.videos.length > 0 &&
-                                        <a href={ project.videos[0] } target='_blank' className='w-fit px-6 py-1 rounded border-amber-500 border-2 font-nunito_sans font-bold text-amber-500 hover:bg-amber-500 hover:text-white transition-all'>Demo Video</a>
+                                        <a href={ project.videos[0] } target='_blank' className='w-fit px-6 py-1 mt-2 rounded border-amber-500 border-2 font-nunito_sans font-bold text-amber-500 hover:bg-amber-500 hover:text-white transition-all'>Demo Video</a>
                                     }
                                 </div>
-                                <div className='flex justify-center p-12'>
-                                    <img alt='project-image' src={project.images[0]}></img>
+                                <div className='flex justify-center lg:p-12 p-6 lg:max-w-[50%]'>
+                                    <img alt='project-image' src={project.images[0]} className='lg:rounded-md rounded'></img>
                                 </div>
                             </div>
-                            <hr />
+                            <hr className='w-full' />
                             
                             <div className='bg-gray-100 flex flex-col pt-12 gap-6'>
-                                <h1 className='mx-10 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>About</h1>
+                                <h1 className='mx-6 pb-6 tracking-tighter text-4xl font-bold font-nunito_sans'>About</h1>
                                 {
                                     project.aboutParagraphs.length > 0 ?
-                                    <div className='flex flex-col gap-6'>
+                                    <div className='flex flex-col gap-6 px-6'>
                                         {project.aboutParagraphs.map((about: string, index: number) => (
                                             <p key={index} className='indent-6'>
                                                 {about}
@@ -89,7 +89,7 @@ export default function Project({ params }: ProjectProps) {
                                     </div>
                                     :
                                     <div>
-                                        <p>no about paragraphs</p>
+                                        <p className='text-center text-gray-400'>No data found</p>
                                     </div>
                                 }
                             </div>

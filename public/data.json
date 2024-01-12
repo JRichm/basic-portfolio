@@ -7,8 +7,12 @@
             "date": "2023-07-27",
             "videos": ["https://www.youtube.com/watch?v=k33QYJn3hmQ"],
             "images": ["/gardengame.png"],
-            "technologies": ["Javascript-Languages", "Flask-Frameworks", "Amazon AWS-Tools", "SQL-Data"],
-            "aboutParagraphs": []
+            "technologies": ["Javascript-Languages", "Flask-Frameworks", "SQL-Data", "Amazon AWS-Tools"],
+            "aboutParagraphs": ["This enjoyable game, based on the game Cookie Clicker, puts you in the shoes of a gardener, allowing you to grow and nurture a peaceful garden. As your virtual plants flourish, you'll find yourself returning to monitor their progress and expand your garden.",
+                                "One of the most fulfilling elements of this project that I implemented was the game state-saving mechanics. Every interaction with the game, be it hovering/clicking on the game board or making a purchase from the store, triggers an automatic save of the game state. Even if they exit the game or close the page, eliminating any risk of progress loss.",
+                                "Additionally, the excitement grew with the leaderboard system, allowing users to track the top gardens based on the most leaves or leaves per second. If I return to this project, I would like to implement a feature that allows users to share their garden to social media, enhancing the social aspect.",
+                                "For the development of this project, I used pure Javascript and Jinja2 templates to construct the front end. The backend is powered by a PostgreSQL database, which stores both game data and user information. To handle the game API and serve the front end, I utilized a Flask server."
+            ]
         },
         {
             "id": "1",
@@ -18,7 +22,9 @@
             "videos": ["https://www.youtube.com/watch?v=FArKw2FsZsw"],
             "images": ["/midifret.png"],
             "technologies": ["Javascript-Languages", "Node.js-Frameworks", "Amazon AWS-Tools", "bit.io-Data"],
-            "aboutParagraphs": ["Online guitar tablature helped me learn guitar and I wanted to make tabs more available to give new player more tools to learn. I did this by creating a tool for anyone to either compose their own tabs or upload .midi files and convert them into tabs."]
+            "aboutParagraphs": ["Online guitar tablature helped me learn guitar and I wanted to make tabs more available to give new player more tools to learn. I did this by creating a tool for anyone to either compose their own tabs or upload .midi files and convert them into tabs.",
+                                "The technology stack is straightforward for this project, utilizing Javascript and HTML for the front end. On the backend, a Node server is responsible for managing the application. Additionally, I integrated an online bit.io database to efficiently store tab data. I also used webpack and MidiParser.js for specific functionalities."
+            ]
         },
         {
             "id": "2",
@@ -36,7 +42,7 @@
             "date": "2023-xx-xx",
             "images": ["/pixelpath.png"],
             "technologies": ["C#-Languages", "Unity-Apps", "Blender-Apps"],
-            "aboutParagraphs": []
+            "aboutParagraphs": ["PixelPath pits you and your tower against brutal waves of enemies"]
         },
         {
             "id": "4",
