@@ -1,6 +1,6 @@
 export default function HeroComponent() {
     return (
-        <div className="bg-gray-100 p-8 flex flex-row justify-between lg:place-items-center">
+        <div className="bg-gray-100 p-8 flex flex-row justify-between lg:place-items-center max-w-screen">
             <div className="z-10 w-full">
                 <h1 className="text-5xl font-bold font-nunito_sans">James Richmond</h1>
                 <h6>Software Developer</h6>
