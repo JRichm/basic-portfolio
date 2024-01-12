@@ -52,7 +52,7 @@ export default function ProjectComponent() {
                         <div className='flex flex-wrap gap-1.5 p-2 justify-center gap-y-0 w-[180px] self-center tracking-normal'>
                             {
                                 projects[i].technologies.map(tech => (
-                                    <p key={`${ tech.split('-')[0] }`} className='hidden lg:block tracking-tigher lg:text-sm font-light'><em className='text-[10px] pr-0.5'>#</em>{`${ tech.split('-')[0] }`}</p>
+                                    <p key={`${ tech.split('-')[0] }`} className='hidden lg:block tracking-tigher lg:text-sm font-light'><em className='text-[9px] pr-0.5 text-gray-400 font-thin'></em>{`${ tech.split('-')[0] }`}</p>
                                 ))
                             }
                         </div>
