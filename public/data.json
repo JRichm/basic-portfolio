@@ -29,11 +29,11 @@
         {
             "id": "2",
             "name": "ArtistLinq",
-            "description": "Description goes here.",
+            "description": "Create a community around your creativity!",
             "date": "2023-xx-xx",
             "images": ["/artistlinq.png"],
             "technologies": ["Typescript-Languages", "Next.js-Frameworks", "prisma-Data", "Microsoft Azure-Tools"],
-            "aboutParagraphs": []
+            "aboutParagraphs": ["ArtistLinq is a mock social media platform designed to cater to the artistic community. Providing a dynamic space for artists to showcase their creations, sell their artwork, set up a personalized commission shop, and fostering connections with fans and fellow artists. With robust user authentication, ArtistLinq enables artists to engage in meaningful interactions through likes, favorites, and saves."]
         },
         {
             "id": "3",
@@ -42,7 +42,7 @@
             "date": "2023-xx-xx",
             "images": ["/pixelpath.png"],
             "technologies": ["C#-Languages", "Unity-Apps", "Blender-Apps"],
-            "aboutParagraphs": ["PixelPath pits you and your tower against brutal waves of enemies"]
+            "aboutParagraphs": ["In PixelPath, you face relentless waves of enemies, and your tower stands as the last line of defense. While your defenses can slow them down, the challenge lies in the inevitability that they won't be deterred forever. As you navigate through an unknown map, the challenge unfolds with each wave, adding an element of exploration and unpredictability to the gameplay."]
         },
         {
             "id": "4",
@@ -51,7 +51,7 @@
             "date": "2023-xx-xx",
             "images": [],
             "technologies": ["C#-Languages", "Unity-Apps", "Blender-Apps"],
-            "aboutParagraphs": []
+            "aboutParagraphs": ["SurvivalRTS, a fusion of Command and Conquer and Minecraft, is an innovative game is crafted with a blend of technologies and thoughtful game mechanics. I used Unity, a leading game engine, to provide a seamless environment for creating immersive 3D worlds and fluid gameplay, while the intricate game logic and mechanics are powered by the C# programming language."]
         },
         {
             "id": "5",
