@@ -27,9 +27,9 @@ export default function Home() {
           <p className="indent-4">After college, I took a leap of faith, graduating from a rigorous software engineering bootcamp last year. Over the past three years, my passion for coding has evolved into a commitment to clean, efficient, and well-documented code.</p>
           <h1 className="p-6 mt-12 tracking-normal text-2xl font-medium font-nunito_sans">Why explore with me?</h1>
           <div className="flex lg:flex-row gap-4 flex-col w-full place-self-center place-items-center">
-            <p className="flex flex-col lg:w-full w-[80%] place-items-center text-center mt-4"><em className="mb-1 not-italic indent-0 w-[200%] font-medium">🚀 Innovative Solutions</em>Challenges excite me, and I bring fresh perspectives to ensure innovative and effective solutions.</p>
-            <p className="flex flex-col lg:w-full w-[80%] place-items-center text-center mt-4"><em className="mb-1 not-italic indent-0 w-[200%] font-medium">🤝 Collaborative Spirit</em>My enthusiasm for collaboration fosters an environment where ideas flourish, leading to creative and impactful outcomes.</p>
-            <p className="flex flex-col lg:w-full w-[80%] place-items-center text-center mt-4"><em className="mb-1 not-italic indent-0 w-[200%] font-medium">💻 Tech Toolkit</em>Proficient in deploying full-stack applications, I bring a versatile skill set and a hunger for staying at the forefront of technological advancements.</p>
+            <p className="flex flex-col lg:w-full max-w-screen w-[80%] place-items-center text-center mt-4"><em className="mb-1 not-italic indent-0 w-[200%] font-medium">🚀 Innovative Solutions</em>Challenges excite me, and I bring fresh perspectives to ensure innovative and effective solutions.</p>
+            <p className="flex flex-col lg:w-full max-w-screen w-[80%] place-items-center text-center mt-4"><em className="mb-1 not-italic indent-0 w-[200%] font-medium">🤝 Collaborative Spirit</em>My enthusiasm for collaboration fosters an environment where ideas flourish, leading to creative and impactful outcomes.</p>
+            <p className="flex flex-col lg:w-full max-w-screen w-[80%] place-items-center text-center mt-4"><em className="mb-1 not-italic indent-0 w-[200%] font-medium">💻 Tech Toolkit</em>Proficient in deploying full-stack applications, I bring a versatile skill set and a hunger for staying at the forefront of technological advancements.</p>
           </div>
         </div>
 
