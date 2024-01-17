@@ -51,7 +51,7 @@
             "date": "2023-xx-xx",
             "images": [],
             "technologies": ["C#-Languages", "Unity-Apps", "Blender-Apps"],
-            "aboutParagraphs": ["SurvivalRTS, a fusion of Command and Conquer and Minecraft, is an innovative game is crafted with a blend of technologies and thoughtful game mechanics. I used Unity, a leading game engine, to provide a seamless environment for creating immersive 3D worlds and fluid gameplay, while the intricate game logic and mechanics are powered by the C# programming language."]
+            "aboutParagraphs": ["SurvivalRTS, a fusion of Command and Conquer and Minecraft, is an innovative game is crafted with a mix of technologies and thoughtful game mechanics. I used Unity, a leading game engine, to provide a seamless environment for creating immersive 3D worlds, while the game logic and mechanics are powered by the C# programming language."]
         },
         {
             "id": "5",
