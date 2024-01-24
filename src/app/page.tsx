@@ -23,7 +23,7 @@ export default function Home() {
         {/* About Section */}
         <div className="bg-gray-100 pt-24 flex flex-col px-10 ">
           <h1 className="pb-6 tracking-tighter lg:text-3xl text-2xl mt-8 font-bold font-nunito_sans">Curious about the future of tech and innovation?</h1>
-          <p className="indent-4 mb-4">I&rsquo;m James, a dynamic software engineer ready to take you on a journey of coding, collaboration, and creativity. Despite being relatively new to the professional scene, the advantages of working with me are crystal clear.</p>
+          <p className="indent-4 mb-4">My name is James and I am a software engineer from Sandy, Utah. I am passionate about bringing ideas to life, helping others, and learning every day.</p>
           <p className="indent-4">After college, I took a leap of faith, graduating from a rigorous software engineering bootcamp last year. Over the past three years, my passion for coding has evolved into a commitment to clean, efficient, and well-documented code.</p>
           <h1 className="p-6 mt-12 tracking-normal text-2xl font-medium font-nunito_sans">Why explore with me?</h1>
           <div className="flex lg:flex-row gap-4 flex-col w-full place-self-center">
